@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mening Ilovam</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; }
+    .buttons { display: flex; flex-direction: column; gap: 15px; }
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+    .btn-android { background: #a4c639; }
+    .btn-windows { background: #0078d6; }
+    .btn-web { background: #ff6b6b; }
+    .info {
+      margin-top: 25px;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🚀 Mening Ilovam</h1>
+    <p>Ilovani quyidagi platformalar uchun yuklab oling:</p>
+    <div class="buttons">
+      <a href="myapp.apk" class="btn btn-android" download>
+        📱 Android uchun .APK yuklab olish
+      </a>
+      <a href="myapp-windows.zip" class="btn btn-windows" download>
+        💻 Windows uchun yuklab olish
+      </a>
+      <a href="#" class="btn btn-web" onclick="alert('Siz allaqachon veb-versiyadasiz!')">
+        🌐 Veb orqali ishga tushirish
+      </a>
+    </div>
+    <div class="info">
+      Android: 5.0 (Lollipop) va undan yuqori versiyalarda ishlaydi<br>
+      Windows: 7, 10, 11 da ishlaydi
+    </div>
+  </div>
+</body>
+</html>
